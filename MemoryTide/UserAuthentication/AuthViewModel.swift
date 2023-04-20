@@ -7,11 +7,13 @@
 
 import Foundation
 import FirebaseAuth
+import SwiftUI
 
 class AuthViewModel: ObservableObject {
     
     @Published var userAuth: UserAuth?
     @Published var isLoading = false
+    @Published var showHomeScreen = false
     @Published var name: String = ""
     @Published var email: String = ""
     @Published var password: String = ""
@@ -83,6 +85,8 @@ class AuthViewModel: ObservableObject {
                         } else {
                             strongSelf.userAuth?.name = authResult.user.displayName ?? ""
                             print("Logged in as: \(strongSelf.userAuth?.name ?? "N/A")")
+                            strongSelf.showHomeScreen = true
+                            UserDefaults.standard.set(true, forKey: "isSignedIn")
                         }
                     })
                 }
