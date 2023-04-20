@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A974F61A29EE3C2700375475 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974F61929EE3C2700375475 /* HomeView.swift */; };
 		A9CDC04629CEACEE009598E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDC04529CEACEE009598E0 /* Assets.xcassets */; };
 		A9CDC04929CEAD0B009598E0 /* MemoryTideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDC04829CEAD0B009598E0 /* MemoryTideApp.swift */; };
 		A9E21A6D29CEAF0500BE97C6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A9E21A6C29CEAF0500BE97C6 /* FirebaseAuth */; };
@@ -17,6 +18,10 @@
 		A9E21A7429CEB05400BE97C6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF10A029C5976B003ABAB8 /* AuthViewModel.swift */; };
 		A9E21A7529CEB05400BE97C6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E96616F29C33B91002E77D7 /* LoginView.swift */; };
 		A9E21A7A29CEB0AA00BE97C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9CDC02C29CEA798009598E0 /* GoogleService-Info.plist */; };
+		A9E542B829F0C02F006A2935 /* existingUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E542B729F0C02F006A2935 /* existingUser.swift */; };
+		A9E542BA29F0C375006A2935 /* HomeViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E542B929F0C375006A2935 /* HomeViewHeader.swift */; };
+		A9E542BC29F0C43F006A2935 /* SignupOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E542BB29F0C43F006A2935 /* SignupOptions.swift */; };
+		A9E542C029F0CDFA006A2935 /* newUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E542BF29F0CDFA006A2935 /* newUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +29,16 @@
 		5E671AB629C343040012BF90 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		5E72C04729C32DF300266371 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E96616F29C33B91002E77D7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A974F61829EE38F800375475 /* MemoryTide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryTide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A974F61929EE3C2700375475 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A9CDC02C29CEA798009598E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9CDC04529CEACEE009598E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CDC04829CEAD0B009598E0 /* MemoryTideApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTideApp.swift; sourceTree = "<group>"; };
 		A9DF10A029C5976B003ABAB8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		A9E21A6A29CEAE8F00BE97C6 /* MemoryTide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MemoryTide.app; path = "/Users/williamsmac/Desktop/MemoryTide/build/Debug-iphoneos/MemoryTide.app"; sourceTree = "<absolute>"; };
+		A9E542B729F0C02F006A2935 /* existingUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = existingUser.swift; sourceTree = "<group>"; };
+		A9E542B929F0C375006A2935 /* HomeViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewHeader.swift; sourceTree = "<group>"; };
+		A9E542BB29F0C43F006A2935 /* SignupOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOptions.swift; sourceTree = "<group>"; };
+		A9E542BF29F0CDFA006A2935 /* newUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,7 @@
 			children = (
 				5E72C03F29C32DF100266371 /* MemoryTide */,
 				A9E21A6B29CEAF0500BE97C6 /* Frameworks */,
+				A974F61829EE38F800375475 /* MemoryTide.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,10 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				A9CDC04829CEAD0B009598E0 /* MemoryTideApp.swift */,
-				5E671AB429C342F50012BF90 /* WelcomeView.swift */,
-				5E671AB629C343040012BF90 /* SignupView.swift */,
-				A9DF10A029C5976B003ABAB8 /* AuthViewModel.swift */,
-				5E96616F29C33B91002E77D7 /* LoginView.swift */,
+				A9E542BD29F0CCBB006A2935 /* SignupHome */,
+				A9E542BE29F0CDA9006A2935 /* UserAuthentication */,
+				A974F61929EE3C2700375475 /* HomeView.swift */,
 				A9CDC04529CEACEE009598E0 /* Assets.xcassets */,
 				A9CDC02C29CEA798009598E0 /* GoogleService-Info.plist */,
 				5E72C04629C32DF300266371 /* Preview Content */,
@@ -81,6 +91,36 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9E542BD29F0CCBB006A2935 /* SignupHome */ = {
+			isa = PBXGroup;
+			children = (
+				5E671AB429C342F50012BF90 /* WelcomeView.swift */,
+				A9E542B929F0C375006A2935 /* HomeViewHeader.swift */,
+				A9E542BB29F0C43F006A2935 /* SignupOptions.swift */,
+			);
+			path = SignupHome;
+			sourceTree = "<group>";
+		};
+		A9E542BE29F0CDA9006A2935 /* UserAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF10A029C5976B003ABAB8 /* AuthViewModel.swift */,
+				A9E542B729F0C02F006A2935 /* existingUser.swift */,
+				A9E542BF29F0CDFA006A2935 /* newUser.swift */,
+				A9E542C129F0CEBF006A2935 /* AuthenticationViews */,
+			);
+			path = UserAuthentication;
+			sourceTree = "<group>";
+		};
+		A9E542C129F0CEBF006A2935 /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				5E96616F29C33B91002E77D7 /* LoginView.swift */,
+				5E671AB629C343040012BF90 /* SignupView.swift */,
+			);
+			path = AuthenticationViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +145,7 @@
 				A9E21A7029CEAF0D00BE97C6 /* GoogleSignInSwift */,
 			);
 			productName = MemoryTide;
-			productReference = A9E21A6A29CEAE8F00BE97C6 /* MemoryTide.app */;
+			productReference = A974F61829EE38F800375475 /* MemoryTide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,8 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9E21A7229CEB05400BE97C6 /* WelcomeView.swift in Sources */,
+				A9E542B829F0C02F006A2935 /* existingUser.swift in Sources */,
 				A9E21A7329CEB05400BE97C6 /* SignupView.swift in Sources */,
+				A9E542BC29F0C43F006A2935 /* SignupOptions.swift in Sources */,
 				A9E21A7429CEB05400BE97C6 /* AuthViewModel.swift in Sources */,
+				A9E542BA29F0C375006A2935 /* HomeViewHeader.swift in Sources */,
+				A974F61A29EE3C2700375475 /* HomeView.swift in Sources */,
+				A9E542C029F0CDFA006A2935 /* newUser.swift in Sources */,
 				A9E21A7529CEB05400BE97C6 /* LoginView.swift in Sources */,
 				A9CDC04929CEAD0B009598E0 /* MemoryTideApp.swift in Sources */,
 			);
